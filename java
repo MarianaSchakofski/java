@@ -43,6 +43,7 @@ function editarproduto(botao) {
   for (let i = 0; i < celulas.length - 1; i++) {
     celulas[i].innerHTML = `<input value="${celulas[i].textContent}">`; // Torna cada célula editável
   }
+  
 
   botao.textContent = 'Salvar'; // Altera texto do botão
   botao.onclick = function() { salvarEdicao(this); }; // Define nova ação do botão
